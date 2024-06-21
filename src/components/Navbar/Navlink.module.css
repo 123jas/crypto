@@ -1,0 +1,58 @@
+.links{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+.link{
+    display: flex;
+    width: 26%;
+    align-items: center;
+    padding:.5rem 7.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.4s ease;
+    height: 35px;
+    font-size: 1rem;
+}
+
+.active{
+    background-color: #0071bd;
+    color: #f9f9f9;
+
+}
+
+.link:hover{
+    color: #f9f9f9;
+    background-color: #0071bd;
+}
+
+svg{
+    margin-right: 0.5rem;
+}
+
+.block{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 950px){
+    .links{
+        position: absolute;
+        background-color: #0d023d;
+        right: 0;
+        margin-top: 1rem;
+        display: none;
+    }
+    .link{
+        width: 46%;
+        padding: 0.5rem 5rem;
+    }
+    .block{
+        position: absolute;
+        background-color: #0d023d;
+        right: 0;
+        margin-top: 1rem;
+        display: block;
+    }
+}

@@ -1,0 +1,69 @@
+.homepage{
+    padding-left: 1.5rem;
+}
+
+.homepage h1{
+    color: #191b25;
+}
+
+.stat p,.stat h4{
+    margin: 0;
+}
+
+.stat p{
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+}
+
+.stat-heading{
+    color: gray;
+    font-size: medium;
+}
+.stats{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 2.85rem;
+}
+
+.crypto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 0 ;
+}
+
+.crypto a{
+    color: #0071bd;
+    transition: all 0.8s ease-in-out;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.crypto a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 570px){
+    .homepage .main-heading{
+        text-align: center;
+    }
+    .stats{
+        column-gap: 6rem;
+    }
+    .homepage{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .homepage h1{
+        font-size: 1.5rem;
+    }
+    .stat-heading{
+        font-size: 1rem;
+    }
+    .stat p{
+        font-size: 1.5rem;
+    }
+    .crypto{
+        flex-direction: column;
+    }
+}

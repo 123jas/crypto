@@ -1,0 +1,54 @@
+.main_stats{
+    margin-left: 2rem;
+}
+
+.heading svg{
+    margin-right: .5rem;
+}
+
+.attributes,.link{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.value{
+    font-weight: bolder;
+}
+
+hr{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.main_stats{
+    width: 75%;
+    margin-top: 1rem;
+}
+.link a{
+    color: #0071bd;
+}
+.links{
+    width: 45%;
+    margin-right: 1rem;
+}
+.links h3{
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+
+.attributes:not(:last-child):after,.link:not(:last-child):after{
+    position:absolute;
+    top: 20px;
+    content: '';
+    border-bottom: 2px solid gray;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+@media(max-width: 1000px){
+    .links{
+        width: 75%;
+    }
+}

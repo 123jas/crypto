@@ -1,0 +1,54 @@
+.container{
+    width:250px;
+    height: 225px;
+    background-color: #f9f9f9;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.container:hover{
+    transform: scale(1.02);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
+}
+
+h4,p{
+    padding: 0;
+    margin: 0;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+}
+.addOn{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.logo img{
+    width: 35px;
+    height: 35px;
+}
+
+p:not(:first-child){
+    margin-top: 1rem;
+}
+
+.border{
+    width: 100%;
+    border-bottom: 2px solid gray;
+    margin-top:1rem;
+}
+
+@media (max-width: 570px) {
+    .container{
+        margin: auto;
+        width: 320px;
+        margin-bottom: 2rem;
+    }
+}
+.coinLink{
+    color: black;
+}

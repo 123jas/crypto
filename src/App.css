@@ -1,0 +1,29 @@
+.flex{
+    display: flex;
+}
+
+body{
+    background-color: #d9d9d9;
+}
+
+main{
+    width: 75%;
+    margin-left: 20rem;
+}
+
+.load{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 950px){
+    .flex{
+        flex-direction: column;
+    }
+    main{
+        width:100%;
+        margin-left: 0;
+    }
+}
